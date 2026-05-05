@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CorpSolutions | Business Strategy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">CORP<span>SOLUTIONS</span></a>
+            <ul class="nav__list">
+                <li><a href="#blog">Insights</a></li>
+                <li><a href="#contact" class="btn btn--small">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container">
+            <h1>Liderando la Transformación Digital</h1>
+            <p>Soluciones integrales para empresas que buscan excelencia y escalabilidad en el mercado global.</p>
+        </section>
+
+        <section class="blog container" id="blog">
+            <h2 class="section-title">Blog Corporativo</h2>
+            <div class="blog-grid">
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=500&q=80" alt="Data" class="card__img">
+                    <div class="card__body">
+                        <span class="card__tag">Tecnología</span>
+                        <h3>Análisis de Datos 2026</h3>
+                        <p>Cómo interpretar métricas complejas para tomar decisiones de negocio inteligentes.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=500&q=80" alt="Office" class="card__img">
+                    <div class="card__body">
+                        <span class="card__tag">Cultura</span>
+                        <h3>Espacios de Co-working</h3>
+                        <p>El futuro de las oficinas corporativas y el bienestar de los equipos remotos.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <form class="form-card" id="corpForm">
+                    <h2 class="form__title">Solicitar Consultoría</h2>
+                    <div class="form__grid">
+                        <div class="form__group">
+                            <input type="text" id="name" class="form__input" placeholder=" " required minlength="3">
+                            <label class="form__label">Nombre completo</label>
+                        </div>
+                        <div class="form__group">
+                            <input type="email" id="email" class="form__input" placeholder=" " required>
+                            <label class="form__label">Email corporativo</label>
+                        </div>
+                        <div class="form__group">
+                            <input type="tel" id="phone" class="form__input" placeholder=" " required inputmode="numeric">
+                            <label class="form__label">Teléfono (Solo números)</label>
+                        </div>
+                        <div class="form__group">
+                            <div class="password-wrapper">
+                                <input type="password" id="company_key" class="form__input" placeholder=" " required minlength="6">
+                                <label class="form__label">Código de Empresa</label>
+                                <button type="button" id="togglePassword" class="btn-view">👁️</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full" id="submitBtn">Enviar ahora</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div id="modalOverlay" class="modal-overlay">
+        <div class="modal">
+            <span class="modal__icon"></span>
+            <h2 class="modal__title">¡Solicitud Enviada!</h2>
+            <p class="modal__text">Un asesor se comunicará con usted a la brevedad para agendar una reunión.</p>
+            <button id="closeModal" class="btn btn--primary btn--full">Finalizar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
